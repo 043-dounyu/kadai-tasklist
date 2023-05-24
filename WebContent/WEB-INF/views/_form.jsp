@@ -4,7 +4,7 @@
 <br/><br/>
 
 <label for = "content_msg">メッセージ</label><br/>
-<input type = "text" name="content" id = "content_msg" value="${task.content }"/>
+<input type = "text" name="content" id = "content_tsk" value="${task.content }"/>
 <br /><br />
 
 <input type="hidden" name="_token" value="${_token}" />
