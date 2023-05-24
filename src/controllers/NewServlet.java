@@ -1,4 +1,4 @@
-package controller;
+package controllers;
 
 import java.io.IOException;
 
@@ -31,7 +31,7 @@ public class NewServlet extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //CSRF対策
-        request.setAttribute("message", new Task());
+        request.setAttribute("task", new Task());
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/new.jsp");
         rd.forward(request,response);
